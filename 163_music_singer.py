@@ -108,7 +108,7 @@ class HotSong:
                                            self.format_str(song_name),
                                            self.format_str(str(album_id)),
                                            self.format_str(album_name)))
-                        # self.conn.insert(table=self.table, column=self.column, values=values)
+                        self.conn.insert(table=self.table, column=self.column, values=values)
                 _from += limit
             else:
                 success = True
